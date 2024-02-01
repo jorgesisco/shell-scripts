@@ -44,10 +44,14 @@ if [ -z "$APP_NAME" ] || [ -n "$APP_NAME" ]; then
     mkdir docker
     touch docker/Dockerfile docker/docker-compose.yml
     cp /Users/$USER/.scripts/template-files/ecr.sh docker/ecr.sh
+    cp /Users/$USER/.scripts/template-files/version.json docker/version.json
     cp /Users/$USER/.scripts/template-files/Makefile Makefile
     mkdir tests
     touch tests/__init__.py
     touch .env README.md requirements.txt
+    touch template.yaml
+    touch samconfig.temp.toml
+    touch samconfig.toml
     
 
     # Append to README.md
